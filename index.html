@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Ecuboosttruck</title>
+    <style>
+    </style>
+</head>
+<body>
+    
+    <!-- Header with Slider -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Ecuboosttruck</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Anasayfa</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="chiptuningDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Chiptuning
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="chiptuningDropdown">
+                                <li><a class="dropdown-item" href="AgirvasitaChiptuning.html">Ağır Vasıta Chiptuning</a></li>
+                                <li><a class="dropdown-item" href="BinekChiptuning.html">Binek Chiptuning</a></li>
+                                <li><a class="dropdown-item" href="TraktorChiptuning.html">Tarım Chiptuning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="ekHizmetlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 Ek Hizmetler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="ekHizmetlerDropdown">
+                                <li><a class="dropdown-item" href="Egriptali.html">EGR İptali</a></li>
+                                <li><a class="dropdown-item" href="Dpfiptali.html">DPF İptali</a></li>
+                                <li><a class="dropdown-item" href="Adbluiptali.html">ADBlue İptali</a></li>
+                                <li><a class="dropdown-item" href="Hizlimitoriptali.html">Hız Limitörü İptali</a></li> 
+                                <li><a class="dropdown-item" href="ArizaKoduSilme.html">Arıza Kodu (DTC) Silme</a></li>
+                                <li><a class="dropdown-item" href="ArizaTespit.html">Arıza Tespit</a></li>
+                                <li><a class="dropdown-item" href="AracKontrolleri.html">Araç Kontrolleri</a></li>
+                                <li><a class="dropdown-item" href="GizliOzellikAcmaKapama.html">Gizli Özellik Açma-Kapama</a></li>
+                               
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="Urunler.html">Ürünler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://wa.me/905329999991">İletişim</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/1..jpg" class="d-block w-100" alt="...">
+                    <div class="animated-text">
+                        <div class="animated-text">
+                            <h1 class="prof-text" style="font-family: 'Arial', sans-serif; font-weight: 1000; color: orange;">PROFESYONEL</h1>
+                            <h2 class="car-truck-text" style="font-family: 'Arial', sans-serif; font-weight: 600; color: #6c757d;">BİNEK & AĞIR VASITA</h2>
+                            <h3 class="chiptuning-text" style="font-family: 'Arial', sans-serif; font-weight: 400; color: #6c757d;">CHİPTUNİNG</h2>
+                             <a href="https://wa.me/905329999991" class="normal-btn">Detaylı bilgi almak için</a>
+                        </div>
+                         
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/2..jpg" class="d-block w-100" alt="...">
+                    <div class="animated-text">
+                        <div class="animated-text">
+                            <h1 class="prof-text" style="font-family: 'Arial', sans-serif; font-weight: 1000; color: orange;">PROFESYONEL</h1>
+                            <h2 class="car-truck-text" style="font-family: 'Arial', sans-serif; font-weight: 600; color: #6c757d;">BİNEK & AĞIR VASITA</h2>
+                            <h3 class="chiptuning-text" style="font-family: 'Arial', sans-serif; font-weight: 400; color: #6c757d;">CHİPTUNİNG</h2>
+                             <a href="https://wa.me/905329999991" class="normal-btn">Detaylı bilgi almak için</a>
+                        </div>
+                         
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/3..jpg" class="d-block w-100" alt="...">
+                    <div class="animated-text">
+                        <div class="animated-text">
+                            <h1 class="prof-text" style="font-family: 'Arial', sans-serif; font-weight: 1000; color: orange;">PROFESYONEL</h1>
+                            <h2 class="car-truck-text" style="font-family: 'Arial', sans-serif; font-weight: 600; color: #6c757d;">BİNEK & AĞIR VASITA</h2>
+                            <h3 class="chiptuning-text" style="font-family: 'Arial', sans-serif; font-weight: 400; color: #6c757d;">CHİPTUNİNG</h2>
+                             <a href="https://wa.me/905329999991" class="normal-btn">Detaylı bilgi almak için</a>
+                        </div>
+                         
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/4..jpg" class="d-block w-100" alt="...">
+                    <div class="animated-text">
+                        <div class="animated-text">
+                            <h1 class="prof-text" style="font-family: 'Arial', sans-serif; font-weight: 1000; color: orange;">PROFESYONEL</h1>
+                            <h2 class="car-truck-text" style="font-family: 'Arial', sans-serif; font-weight: 600; color: #6c757d;">BİNEK & AĞIR VASITA</h2>
+                            <h3 class="chiptuning-text" style="font-family: 'Arial', sans-serif; font-weight: 400; color: #6c757d;">CHİPTUNİNG</h2>
+                             <a href="https://wa.me/905329999991" class="normal-btn">Detaylı bilgi almak için</a>
+                        </div>
+                         
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    
+   
+    
+    <section class="image-grid">
+        <a href="BinekChiptuning.html">
+            <p>Binek</p>
+            <img src="img/sarı-siyah minimalist araba logo.png" alt="Image 1">
+        </a>
+        <a href="TraktorChiptuning.html">
+            <p>Tarım</p>
+            <img src="img/Farm Business Logo in White Black Illustrative Style (1).png" alt="Image 2">
+        </a>
+        <a href="AgirvasitaChiptuning.html">
+            <p>Ağır Vasıta</p>
+            <img src="img/Adsız tasarım (3).png" alt="Image 3">
+        </a>
+    </section>
+
+
+    <section>
+        <div class="dlab-box">
+            <!-- Birinci dört bölme -->
+          <div class="dlab-box" style="max-height: 250px;">
+             <div class="dlab-media dlab-img-effect zoom" style="max-height: 250px;">
+                <img alt="" src="https://ecutuned.com/storage/ariza-kodu-silme-620x300-1670339545awyFZ-475x230.jpg">
+                <div class="dlab-info-has p-a20 no-hover text-white cursor-pointer">
+                    <div class="relative z-index1">
+                        <h2 class="font-weight-700 text-uppercase font-35 m-t0 m-b10">Arıza Kodu (DTC) Silme</h2>
+                        <a class="font-18" href="ArizaKoduSilme.html">Aracınızda oluşan bir arıza kodunu; mekanik parçanın sistem çalışmasına bir etkisi kalmadığı zamanlarda..</a>
+                    </div>
+                    <i class="flaticon-dashboard-1 bg-icon"></i>
+                </div>
+             </div>
+           </div>
+            <div class="dlab-box" style="max-height: 250px;">
+                <div class="dlab-media dlab-img-effect zoom" style="max-height: 250px;">
+                    <img alt="" src="https://ecutuned.com/storage/gpf-iptali-620x300-1670338453XT7YR-475x230.jpg">
+                    <div class="dlab-info-has p-a20 no-hover text-white cursor-pointer">
+                        <div class="relative z-index1">
+                            <h2 class="font-weight-700 text-uppercase font-35 m-t0 m-b10">Gizli Özellik Açma Kapama</h2>
+                            <a class="font-18" href="ArizaTespit.html">Benzin partikül filtresi rejenerasyon sistemine sahiptir. Bu uygulama ile öncelikle mekanik olarak Partikül Filtresinin içindeki filtre görevi gören elementler boşaltılır...</a>
+                        </div>
+                        <i class="flaticon-dashboard-1 bg-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="dlab-box" style="max-height: 250px;">
+                <div class="dlab-media dlab-img-effect zoom" style="max-height: 250px;">
+                    <img alt="" src="https://ecutuned.com/storage/hiz-limiti-620x300-1670339259wiyvV-475x230.jpg">
+                    <div class="dlab-info-has p-a20 no-hover text-white cursor-pointer">
+                        <div class="relative z-index1">
+                            <h2 class="font-weight-700 text-uppercase font-35 m-t0 m-b10">Hız Limiti İptali</h2>
+                            <a class="font-18" href="Hizlimitoriptali.html">Araçlara koyulmuş hız limitlerini kaldırıyoruz.</a>
+                        </div>
+                        <i class="flaticon-dashboard-1 bg-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="dlab-box" style="max-height: 250px;">
+                <div class="dlab-media dlab-img-effect zoom" style="max-height: 250px;">
+                    <img alt="" src="https://ecutuned.com/storage/dyno-dynamics-620x300-1670339795uYfhJ-475x230.jpg">
+                    <div class="dlab-info-has p-a20 no-hover text-white cursor-pointer">
+                        <div class="relative z-index1">
+                            <h2 class="font-weight-700 text-uppercase font-35 m-t0 m-b10">Dyno - Güç Ölçümü</h2>
+                            <a class="font-18" href="ArizaTespit.html">DynoDynamics Sadece güç ölçmek için değil, profesyonel şekilde tuning uygulaması için kullanılan "yük tipi" bir dinomometre'dir.</a>
+                        </div>
+                        <i class="flaticon-dashboard-1 bg-icon"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- İkinci dört bölme (Slider ile gizlenmiş) -->
+            <div class="dlab-box" style="max-height: 250px;">
+                <div class="dlab-media dlab-img-effect zoom" style="max-height: 250px;">
+                    <img alt="" src="https://ecutuned.com/storage/ecu-620x300-1668773120qrbBI-475x230.jpg">
+                    <div class="dlab-info-has p-a20 no-hover text-white cursor-pointer">
+                        <div class="relative z-index1">
+                            <h2 class="font-weight-700 text-uppercase font-35 m-t0 m-b10">Chiptuning</h2>
+                            <a class="font-18" href="AgirvasitaChiptuning.html">Yeni nesil tüm araçların ve eski nesil birçok aracın büyük bir kısmının motorları, bir beyin yani elektronik kontrol ünitesi (ECU) tarafından kontrol edilmektedir.</a>
+                        </div>
+                        <i class="flaticon-dashboard-1 bg-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="dlab-box" style="max-height: 250px;">
+                <div class="dlab-media dlab-img-effect zoom" style="max-height: 250px;">
+                    <img alt="" src="https://ecutuned.com/storage/dpf-620x300-1668773471EcxX6-475x230.jpg">
+                    <div class="dlab-info-has p-a20 no-hover text-white cursor-pointer">
+                        <div class="relative z-index1">
+                            <h2 class="font-weight-700 text-uppercase font-35 m-t0 m-b10">Partikül Filtresi (DPF) İptali</h2>
+                            <a class="font-18" href="Dpfiptali.html">Partikül Filtresi, yeni nesil dizel araçların egzoz emisyon...</a>
+                        </div>
+                        <i class="flaticon-dashboard-1 bg-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="dlab-box" style="max-height: 250px;">
+                <div class="dlab-media dlab-img-effect zoom" style="max-height: 250px;">
+                    <img alt="" src="https://ecutuned.com/storage/gpf-iptali-620x300-1670338453XT7YR-475x230.jpg">
+                    <div class="dlab-info-has p-a20 no-hover text-white cursor-pointer" onclick="window.location='/hizmetlerimiz/gpf-iptali-opf-iptali-ppf-iptali';">
+                        <div class="relative z-index1">
+                            <h2 class="font-weight-700 text-uppercase font-35 m-t0 m-b10">GPF - OPF - PPF İptali</h2>
+                            <a class="font-18" href="GizliOzellikAcmaKapama.html">Benzin partikül filtresi rejenerasyon sistemine sahiptir. Bu uygulama ile öncelikle mekanik olarak Partikül Filtresinin içindeki filtre görevi gören elementler boşaltılır.. </a>
+                        </div>
+                        <i class="flaticon-dashboard-1 bg-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="dlab-box" style="max-height: 250px;">
+                <div class="dlab-media dlab-img-effect zoom" style="max-height: 250px;">
+                    <img alt="" src="https://ecutuned.com/storage/egr-iptal-1668773870soNwt-475x230.jpg">
+                    <div class="dlab-info-has p-a20 no-hover text-white cursor-pointer">
+                        <div class="relative z-index1">
+                            <h2 class="font-weight-700 text-uppercase font-35 m-t0 m-b10">EGR İptali</h2>
+                            <a class="font-18" href="Egriptali.html">EGR Valfi dışarı atılacak egzoz gazlarının...</a>
+                        </div>
+                        <i class="flaticon-dashboard-1 bg-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Slider kontrolleri -->
+        <div class="slider-controls">
+            <span class="prev" onclick="prevSlide()">&#10094;</span>
+            <span class="next" onclick="nextSlide()">&#10095;</span>
+        </div>
+    </section>
+      
+    <main>
+        <div class="whatsapp-float d-md-flex">
+            <a href="https://wa.me/905329999991" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                <span class="whatsapp-text">Bize Ulaşın</span>
+            </a>
+        </div>
+
+        <section class="contact">
+            <h1 class="heading">Neredeyiz?</h1>
+            <div class="row d-md-flex justify-content-md-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48189.93303290173!2d29.061321918971515!3d40.98430955163046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac5ff013f5197%3A0xb59c129e51d7b8b8!2zQXRhxZ9laGlyL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1716473971060!5m2!1str!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="info  justify-content-md-center ">
+                    <h3>Bize Ulaşın</h3>
+                    <p>Adres: Bostancı sanayi no:4 İstanbul</p>
+                    <p>Tel: 444 44 44</p>
+                    <a href="https://wa.me/905329999991" class="wpbtn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-md-6 d-flex align-items-start justify-content-end">
+                    <div class="footer-contact">
+                        <h4>Bize Ulaşın</h4>
+                        <ul class="contact-links">
+                            <li><a href="tel:+1234567890"><i class="fa fa-phone"></i> 123-456-7890</a></li>
+                            <li><a href="mailto:info@example.com"><i class="fa fa-envelope"></i> info@example.com</a></li>
+                            <li><a href="https://wa.me/1234567890"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+                            <li><a href="https://www.instagram.com/example/"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+   <script>
+ var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var slides = document.querySelectorAll('.dlab-box .dlab-media');
+    
+    // Tüm slaytları gizle
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    // Aktif slaytları göster
+    for (var i = slideIndex; i < slideIndex + 4; i++) {
+        if (i >= slides.length) {
+            break;
+        }
+        slides[i].style.display = "block";
+    }
+}
+
+function nextSlide() {
+    var slides = document.querySelectorAll('.dlab-box .dlab-media');
+    slideIndex += 4;
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
+    showSlides();
+}
+
+function prevSlide() {
+    var slides = document.querySelectorAll('.dlab-box .dlab-media');
+    slideIndex -= 4;
+    if (slideIndex < 0) {
+        slideIndex = slides.length - 4;
+    }
+    showSlides();
+}
+
+
+
+// Otomatik geçiş işlevi
+function autoSlide() {
+    nextSlide();
+}
+
+// İlk başta otomatik geçişi başlat
+var autoSlideInterval = setInterval(autoSlide, 3000); // 3 saniyede bir
+
+
+  </script>
+    
+   
+        
+</body>
+</html>

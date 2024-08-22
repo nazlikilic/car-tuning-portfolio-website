@@ -1,0 +1,879 @@
+
+.custom-button a {
+    color: inherit; /* Buton rengini miras al */
+    text-decoration: none; /* Altı çizgiyi kaldır */
+}
+
+.custom-button {
+    border: 1px solid orange; /* Butonun çerçevesini turuncu yap */
+}
+
+.img-fluid {
+    width: 100%; /* Belirli bir genişlikte göstermek için yüzde olarak ayarlayın */
+    height: auto; /* Yüksekliği otomatik olarak ayarla */
+}
+
+.bg-light {
+    background: white !important;
+}
+
+.navbar {
+    background: transparent !important;
+    position: absolute;
+    width: 100%;
+    z-index: 1000 !important; /* Navbar'ın diğer elemanların üzerinde kalması için z-index değerini artırın */
+}
+
+
+
+.card-img-top {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+}
+
+.animated-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title-divider {
+    width: 50%;
+    height: 6px; 
+    background-color: orange;
+    margin: 0.5rem auto 2rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.custom-container {
+    max-width: 90%;
+}
+
+
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.selection {
+    margin-top: 20px;
+}
+
+#orderDetails {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center; /* Satırı dikeyde hizala */
+    gap: 2rem; /* Elemanlar arası boşluk */
+}
+
+.deneme-img {
+    max-width: 50%; /* Fotoğrafın maksimum genişliği yarısı kadar */
+    object-fit: cover; /* Fotoğrafı sıkıştırarak göster */
+}
+
+.col-lg-12 {
+    flex: 1; /* Diğer içerikle aynı genişlikte olmasını sağla */
+}
+
+h1 {
+    text-align: center; /* Başlığı ortala */
+    margin-top: 0; /* Varsayılan üst boşluğu kaldır */
+    margin-bottom: 2rem; /* Alt boşluk ekle */
+}
+
+.display-5 {
+    text-align: center; /* Başlığı ortala */
+    margin-bottom: 2rem; /* Alt boşluk ekle */
+}
+
+.card {
+    flex: 1; /* Tüm kartları eşit genişlikte yap */
+}
+
+.contact .heading {
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    margin-top: 2rem; /* Üst kenar boşluğu ekle */
+    position: relative;
+}
+
+.contact .heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    margin: 0.5rem auto 0;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact .row iframe {
+    flex: 1;
+    max-width: 50%;
+    height: 500px;
+    border: var(--border);
+    border-radius: 0.5rem;
+}
+
+.contact .row .info {
+    flex: 1;
+    max-width: 48%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.contact .row .info h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact .row .info p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.wpbtn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    background-color: #25D366; /* WhatsApp yeşili */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem; /* Üst kenar boşluğu ekle */
+}
+
+.wpbtn:hover {
+    background-color: #128C7E; /* Hover efekti için daha koyu bir yeşil tonu */
+}
+
+.wpbtn i {
+    font-size: 1.8rem; /* WhatsApp ikon boyutu */
+    margin-right: 0.5rem; /* İkon ile metin arasındaki boşluk */
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px; /* Güncellenmiş: 10px'den 30px'e */
+    padding: 30px; /* Güncellenmiş: 10px'den 30px'e */
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-float a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.whatsapp-icon {
+    width: 50px; /* Güncellenmiş: 40px'den 50px'e */
+    height: 50px; /* Güncellenmiş: 40px'den 50px'e */
+    margin-right: 10px; /* Güncellenmiş: 10px'den 10px'e */
+}
+
+.whatsapp-text {
+    font-size: 25px; /* Güncellenmiş: 14px'den 25px'e */
+    font-weight: bold;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image-grid a {
+    flex: 1;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.image-grid p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.image-grid img {
+    width: 50%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+.image-grid a:hover p {
+    color: #ff9900;
+    transition: color 0.3s ease;
+}
+
+
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: black;
+}
+
+body {
+    overflow-x: hidden; /* Yatay scrollbar'ı gizle */
+}
+
+/* Responsive grid için ayarlar */
+.row-cols-1 > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .row-cols-md-12 > * {
+        flex: 0 0 calc(8.33% - 1rem);
+        max-width: calc(8.33% - 1rem);
+    }
+}
+
+.navbar {
+    background: transparent !important;
+    position: absolute;
+    width: 100%;
+    z-index: 1000 !important; /* Navbar'ın diğer elemanların üzerinde kalması için z-index değerini artırın */
+}
+/* Mobil Görüntü */
+@media (max-width: 768px) {
+    .navbar.collapsed {  /* Bu sınıf navbar çöktüğünde eklenir */
+      background-color: #f0f0f0; /* Arka plan rengini istediğiniz renge değiştirin */
+      color: black; /* Yazı rengini istediğiniz renge değiştirin */
+    }
+  }
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Okları beyaz yapar */
+}
+
+
+/* Navbar ögelerinin üzerine gelindiğinde turuncu renk ve altında ince bir çizgi */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: orange; /* Yazı rengini turuncu yap */
+    border-bottom: 2px solid orange; /* Altında ince bir çizgi oluştur */
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+.navbar-nav .nav-link {
+    font-size: 20px;
+}
+
+
+/* Navbar içindeki marka yazısının stili */
+.navbar-brand {
+    
+    font-family: 'Arial Black', sans-serif; /* Font ailesini değiştir */
+    font-size: 28px; /* Yazı boyutunu ayarla */
+    font-weight: bold; /* Kalınlığını ayarla */
+    padding: 0 20px; /* Sol ve sağ boşluk ekleyerek yazının etrafında biraz boşluk bırak */
+    margin-right: 20px; /* Diğer navbar ögelerinden biraz uzaklaştır */
+}
+
+/* Anasayfa ve Chiptuning arasındaki yatay mesafeyi artırma */
+.navbar-nav .nav-item:nth-child(1) {
+    margin-right: 20px; /* Sağ tarafa boşluk ekle */
+}
+
+.navbar-nav .nav-item:nth-child(2) {
+    margin-right: 20px; /* Sağ tarafa boşluk ekle */
+}
+
+/* Chiptuning ve Ecutuning arasındaki yatay mesafeyi artırma */
+.navbar-nav .nav-item:nth-child(3) {
+    margin-right: 20px; /* Sağ tarafa boşluk ekle */
+}
+
+/* Ecutuning ve Ürünler arasındaki yatay mesafeyi artırma */
+.navbar-nav .nav-item:nth-child(4) {
+    margin-right: 20px; /* Sağ tarafa boşluk ekle */
+}
+
+/* Ürünler ve İletişim arasındaki yatay mesafeyi artırma */
+.navbar-nav .nav-item:nth-child(5) {
+    margin-right: 20px; /* Sağ tarafa boşluk ekle */
+}
+
+/* Navbar ögelerinin üzerine gelindiğinde turuncu renk ve altında ince bir çizgi */
+
+
+/* Aktif sayfanın adını turuncu renkte gösterme */
+.navbar-nav .nav-link.active {
+    color: orange; /* Aktif sayfa için yazı rengini turuncu yap */
+}
+
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+    position: relative;
+}
+.carousel-item {
+    height: 80vh;
+    min-height: 300px;
+}
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.animated-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-align: left;
+  }
+  
+  .prof-text {
+    font-size: 48px;
+    font-weight: bold;
+    animation: profTextAnimation 2s ease-in-out;
+  }
+  
+  .car-truck-text {
+    font-size: 36px;
+    animation: carTruckTextAnimation 2s ease-in-out;
+  }
+  
+  .chiptuning-text {
+    font-size: 24px;
+    animation: chiptuningTextAnimation 2s ease-in-out;
+  }
+  
+  @keyframes profTextAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes carTruckTextAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes chiptuningTextAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Carousel-item */
+.carousel-item {
+    position: relative;
+  }
+  
+  /* Animated Text */
+  .animated-text {
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    color: white;
+    text-align: left;
+  }
+  
+  /* Prof Text */
+  .prof-text {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: orange;
+    font-size: 48px;
+    animation: profTextAnimation 2s ease-in-out;
+    
+  }
+  
+  
+  @keyframes profTextAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Car Truck Text */
+  .car-truck-text {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    color: #28a745;
+    font-size: 36px;
+    animation: carTruckTextAnimation 2s ease-in-out;
+  }
+  
+  @keyframes carTruckTextAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Chiptuning Text */
+  .chiptuning-text {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #6c757d;
+    font-size: 24px;
+    animation: chiptuningTextAnimation 2s ease-in-out;
+  }
+  
+  @keyframes chiptuningTextAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .normal-btn {
+    background-color: rgb(0,0,0,0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; /* Butonu konumlandırmak için */
+    bottom: 0; /* Butonu en alta yerleştirmek için */
+    right: 20px; /* Butonu sağa yerleştirmek için */
+  }
+  
+  
+/* Başlık için üst ve alt boşluk ayarı */
+header h1 {
+    margin-top: 20px; /* Başlık fotoğrafın üstünde biraz yukarı çıksın */
+    margin-bottom: 20px; /* Başlık fotoğrafın altında biraz daha boşluk bırakılsın */
+}
+
+/* Ana metin için üst ve alt boşluk ayarı */
+header p {
+    margin-top: 10px; /* Ana metin fotoğrafın üstünde biraz yukarı çıksın */
+    margin-bottom: 30px; /* Ana metin fotoğrafın altında biraz daha boşluk bırakılsın */
+}
+
+/* Buton için üst boşluk ayarı */
+header .normal-btn {
+    color: inherit; /* Buton rengini miras al */
+    text-decoration: none; /* Altı çizgiyi kaldır */
+    border: 1px solid white; /* Butonun çerçevesini turuncu yap */
+}
+
+@media (max-width: 768px) {
+    .animated-text {
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%; /* Mobil cihazlar için genişliği azaltır */
+    }
+
+    .animated-text h1,
+    .animated-text h2,
+    .animated-text h3 {
+        font-size: 16px; /* Mobil cihazlar için font boyutunu küçültür */
+    }
+
+    .animated-text .normal-btn {
+        padding: 8px 16px;
+        font-size: 14px; /* Mobil cihazlar için buton boyutunu ayarlar */
+    }
+}
+
+
+/* "Bize Ulaşın" kısmını dikeyde ortalamak için yeni düzenleme */
+.d-flex {
+    display: flex;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+/* Slider-one container */
+.slider-one {
+    position: relative;
+    width: 100%;
+
+    overflow: hidden;
+  }
+  
+  /* Slider-one items */
+  .slider-one .slider-items {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slider-one .slider-item {
+    flex-shrink: 0;
+    width: 33.33%; /* Each item takes up 1/3 of the width */
+  }
+  
+  /* Slider-one item content */
+  .slider-one .slider-item-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Navigation buttons */
+  .slider-one .slider-prev,
+  .slider-one .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .slider-one .slider-prev {
+    left: 0;
+  }
+  
+  .slider-one .slider-next {
+    right: 0;
+  }
+  
+.dlab-box {
+    display: flex;
+    flex-wrap: nowrap; /* Yatayda yan yana olmalarını sağlar */
+    overflow-x: auto; /* Eğer ekran dar gelirse kaydırma çubuğu ekler */
+}
+
+.dlab-media {
+    position: relative;
+    width: 50%; /* Eşit olarak ikiye bölmek için yarı yarıya genişlik */
+    overflow: hidden; /* Resmin dışına taşan kısımları gizler */
+}
+
+.dlab-img-effect img {
+    width: 100%; /* Resmi tam genişliği kadar genişletir */
+    height: auto; /* Orantılı olarak yüksekliği ayarlar */
+}
+
+.dlab-info-has {
+    position: absolute;
+    top: 0; /* Yukarıya hizala */
+    left: 0; /* Sola hizala */
+    width: 100%; /* Tam genişlik */
+    height: 100%; /* Tam yükseklik */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dlab-media:nth-child(odd) .dlab-info-has {
+    background: rgba(0, 0, 0, 0.5); /* Kırmızı ve şeffaf arka plan */
+}
+
+.dlab-media:nth-child(even) .dlab-info-has {
+    background: rgba(0, 0, 0, 0.5); /* Siyah ve şeffaf arka plan */
+}
+
+.dlab-info-has h2,
+.dlab-info-has a {
+    margin: 0;
+    color: #fff; /* Metin rengi */
+}
+
+.slider-controls {
+    position: relative;
+    margin-top: -115px; /* Okların üstte olmasını sağlar */
+    text-align: center; /* Okların ortalanmasını sağlar */
+}
+
+.slider-controls span {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* Arkaplan rengi */
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.slider-controls .prev {
+    left: 10px; /* Sol taraftaki okun konumu */
+}
+
+.slider-controls .next {
+    right: 10px; /* Sağ taraftaki okun konumu */
+}
+
+section {
+    padding-bottom: 70px; /* İstenilen boşluğa göre ayarlayabilirsiniz */
+}
+
+header {
+    padding-bottom: 50px;
+}
+
+/* Slider içeriğine uygulanacak stil */
+.dlab-box {
+    display: flex;
+    animation: slide 12s infinite; /* 12 saniyede bir geçiş, sonsuz döngü */
+}
+
+
+
+
+/* Masaüstü ve tabletler için stil */
+@media (min-width: 768px) {
+    .dlab-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .dlab-media {
+      flex: 1 0 250px; /* Her resmin en az 250 piksel genişliği olması için */
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Mobil cihazlar için stil */
+  @media (max-width: 767px) {
+    .dlab-box {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .dlab-media {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .hero-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the entire div */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    
+    animation: textAppear 1.5s ease-in-out;
+    font-family: 'Arial Black', sans-serif; /* Font ailesini değiştir */
+    font-size: 28px; /* Yazı boyutunu ayarla */
+    font-weight: bold; /* Kalınlığını ayarla */
+    padding: 0 20px; /* Sol ve sağ boşluk ekleyerek yazının etrafında biraz boşluk bırak */
+    margin-right: 20px; /* Diğer navbar ögelerinden biraz uzaklaştır */
+}
+
+/* Footer içindeki linkler ve iletişim bilgileri düzenlemesi */
+.footer-links,
+.contact-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-links li,
+.contact-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.contact-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+.bg-dark {
+    background-color: black !important;
+    color: white; /* Footer metin rengini beyaz yapabilirsiniz */
+}
+
+/* İlk grup linklerin sol tarafa hizalanması */
+.footer-links {
+    text-align: left;
+}
+
+/* İkinci grup iletişim bilgilerinin sağ tarafa hizalanması */
+.contact-links {
+    text-align: right;
+}
+
+/* "Bize Ulaşın" başlığını ve iletişim bilgilerini sağ tarafa hizalama */
+.footer-contact {
+    text-align: right;
+}
+
+@media (max-width: 767.98px) { /* Mobil ekran boyutu için */
+    .footer-contact {
+        text-align: center; /* "Bize Ulaşın" başlığını ve iletişim bilgilerini ortala */
+        margin-top: 20px; /* Üstten biraz boşluk ekle */
+    }
+
+    .footer-links {
+        text-align: center; /* Linkleri ortala */
+        margin-bottom: 20px; /* Alttan biraz boşluk ekle */
+    }
+
+    .d-flex {
+        flex-direction: column; /* Flex yönünü dikey yap */
+        align-items: center; /* İçeriği ortala */
+    }
+
+    .justify-content-end {
+        justify-content: center; /* İçeriği ortala */
+    }
+}
+
+/* "Bize Ulaşın" kısmını dikeyde ortalamak için yeni düzenleme */
+.d-flex {
+    display: flex;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}

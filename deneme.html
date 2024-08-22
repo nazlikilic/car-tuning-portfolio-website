@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .slider {
+            width: 100%;
+            height: 50vh; /* Yükseklik ayarlanabilir */
+            position: relative;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            width: 400%; /* Her görüntü 25% genişlikte */
+            transition: all 0.5s ease;
+        }
+        .slide {
+            width: 25%; /* 4 eşit parça */
+            cursor: pointer;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide" onclick="slideTo(0)">
+            <img src="img/1..jpg" alt="Resim 1">
+        </div>
+        <div class="slide" onclick="slideTo(1)">
+            <img src="img/2..jpg" alt="Resim 2">
+        </div>
+        <div class="slide" onclick="slideTo(2)">
+            <img src="img/3..jpg" alt="Resim 3">
+        </div>
+        <div class="slide" onclick="slideTo(3)">
+            <img src="img/4..jpg" alt="Resim 4">
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const slideTo = (index) => {
+        currentIndex = index;
+        const slides = document.querySelector('.slides');
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    };
+
+    const nextSlide = () => {
+        currentIndex++;
+        if (currentIndex >= 4) {
+            currentIndex = 0;
+        }
+        slideTo(currentIndex);
+    };
+
+    const prevSlide = () => {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = 3;
+        }
+        slideTo(currentIndex);
+    };
+
+    const slider = document.querySelector('.slider');
+    slider.addEventListener('mousemove', (event) => {
+        const mouseX = event.clientX;
+        const sliderWidth = slider.offsetWidth;
+        if (mouseX >= sliderWidth - 10) {
+            nextSlide();
+        }
+    });
+</script>
+
+</body>
+</html>
